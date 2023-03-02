@@ -29,13 +29,13 @@ http://127.0.0.1:8000/
 User Credentials 
   
 Email    :  user@gmail.com
-Password :  12345678
+Password :  Thinker@99
 
 
 Admin Credentials 
 
 Email    :  admin@gmail.com
-Password :  12345678
+Password :  Thinker@99
 
 Login api :
 
