@@ -22,13 +22,16 @@ class BookFactory extends Factory
      */
     public function definition()
     {
-        $type = ['fiction', 'nonfiction'];
+        $genreType = ['Science Fiction', 'Crime', 'Fantasy', 'Adventure', 'Romance', 'Mystery', 'Paranormal', 'Historical Fiction', 
+                     'Children’s', 'Cookbook', 'Art', 'Self-help', 'Development', 'Motivational', 'Health', 'History'];
+
         return [
             'name' => $this->faker->word,
             'author' => $this->faker->name,
-            'genre' => $type[rand(0, (count($type)-1))],
-            'isbn' =>$this->faker->word,
-            'description' => $this->faker->text(50)
+            'genre' => $genreType[rand(0, (count($genreType)-1))],
+            'isbn' =>$this->faker->isbn13(),
+            'description' => $this->faker->text(50),
+            'publication_date' => $this->faker->dateTime(),
         ];
     }
 }
